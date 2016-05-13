@@ -5,21 +5,16 @@
 想在某些视图关闭某些功能，在对添加对应设置方法，设置为NO
 
  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
- 
     //开启键盘适应
-    
     [[KeyboardAdapt keyboardAdapt] setFAdaptStartBool:YES];
     
     //开启键盘点击隐藏功能
-    
-    [[KeyboardAdapt keyboardAdapt] setFTapHiddenBool:YES];
+   [[KeyboardAdapt keyboardAdapt] setFTapHiddenBool:YES];
     
     //开启键盘滚动隐藏功能
-    
     [[KeyboardAdapt keyboardAdapt] setFDraggingHiddenBool:YES];
     
     return YES;
-    
   }
   
   4、有什么需求，或者有什么问题，可联系我。这个是我自己弄出来学习和平常使用的。
