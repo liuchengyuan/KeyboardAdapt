@@ -13,6 +13,8 @@
 		4C687C391CE48AD800DBB1AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C687C371CE48AD800DBB1AC /* Main.storyboard */; };
 		4C687C3B1CE48AD800DBB1AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C687C3A1CE48AD800DBB1AC /* Assets.xcassets */; };
 		4C687C3E1CE48AD800DBB1AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C687C3C1CE48AD800DBB1AC /* LaunchScreen.storyboard */; };
+		4C687C4A1CE48AF100DBB1AC /* KeyboardAdapt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C687C471CE48AF100DBB1AC /* KeyboardAdapt.m */; };
+		4C687C4B1CE48AF100DBB1AC /* UIView+FindFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C687C491CE48AF100DBB1AC /* UIView+FindFirstResponder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		4C687C3A1CE48AD800DBB1AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C687C3D1CE48AD800DBB1AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C687C3F1CE48AD800DBB1AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C687C461CE48AF100DBB1AC /* KeyboardAdapt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardAdapt.h; sourceTree = "<group>"; };
+		4C687C471CE48AF100DBB1AC /* KeyboardAdapt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardAdapt.m; sourceTree = "<group>"; };
+		4C687C481CE48AF100DBB1AC /* UIView+FindFirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FindFirstResponder.h"; sourceTree = "<group>"; };
+		4C687C491CE48AF100DBB1AC /* UIView+FindFirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FindFirstResponder.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		4C687C2D1CE48AD800DBB1AC /* KeyboardAdaptDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4C687C451CE48AF100DBB1AC /* KeyboardAdapt */,
 				4C687C311CE48AD800DBB1AC /* AppDelegate.h */,
 				4C687C321CE48AD800DBB1AC /* AppDelegate.m */,
 				4C687C341CE48AD800DBB1AC /* ViewController.h */,
@@ -77,6 +84,17 @@
 				4C687C2F1CE48AD800DBB1AC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C687C451CE48AF100DBB1AC /* KeyboardAdapt */ = {
+			isa = PBXGroup;
+			children = (
+				4C687C461CE48AF100DBB1AC /* KeyboardAdapt.h */,
+				4C687C471CE48AF100DBB1AC /* KeyboardAdapt.m */,
+				4C687C481CE48AF100DBB1AC /* UIView+FindFirstResponder.h */,
+				4C687C491CE48AF100DBB1AC /* UIView+FindFirstResponder.m */,
+			);
+			path = KeyboardAdapt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +168,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C687C361CE48AD800DBB1AC /* ViewController.m in Sources */,
+				4C687C4A1CE48AF100DBB1AC /* KeyboardAdapt.m in Sources */,
 				4C687C331CE48AD800DBB1AC /* AppDelegate.m in Sources */,
 				4C687C301CE48AD800DBB1AC /* main.m in Sources */,
+				4C687C4B1CE48AF100DBB1AC /* UIView+FindFirstResponder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -250,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

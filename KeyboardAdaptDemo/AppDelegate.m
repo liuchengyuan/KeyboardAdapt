@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "KeyboardAdapt.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[KeyboardAdapt keyboardAdapt] setFAdaptStartBool:YES];
+    [[KeyboardAdapt keyboardAdapt] setFTapHiddenBool:YES];
+//    [[KeyboardAdapt keyboardAdapt] setFDraggingHiddenBool:YES];
     return YES;
 }
 
