@@ -196,13 +196,12 @@
     UIView *superView = firstResponderView.superview;
     
     while (1) {
-        if ([superView isKindOfClass:[UIScrollView class]]) {
+        if ([superView isMemberOfClass:[UIScrollView class]] || [superView isMemberOfClass:[UITableView class]]) {
             break;
         }
         else if ([superView.superview isKindOfClass:[UIWindow class]] ||  [NSStringFromClass([superView.superview class]) isEqual:@"UIViewControllerWrapperView"]) {
             break;
         }
-        
         superView = superView.superview;
     }
     
