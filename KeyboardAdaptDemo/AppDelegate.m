@@ -22,7 +22,7 @@
     
     [[KeyboardAdapt keyboardAdapt] setFAdaptStartBool:YES];
     [[KeyboardAdapt keyboardAdapt] setFTapHiddenBool:YES];
-//    [[KeyboardAdapt keyboardAdapt] setFDraggingHiddenBool:YES];
+    [[KeyboardAdapt keyboardAdapt] setFDraggingHiddenBool:YES];
     return YES;
 }
 

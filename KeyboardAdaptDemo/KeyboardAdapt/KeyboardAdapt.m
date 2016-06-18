@@ -78,6 +78,11 @@
     //键盘响应视图
      UIView *firstResponderView = [[[UIApplication sharedApplication] keyWindow] performSelector:@selector(findFirstResponder)];
     
+    //解决键盘隐藏，弹出UIAlertView，键盘所属对象为空问题
+    if (firstResponderView == nil) {
+        return;
+    }
+    
     //键盘响应视图---相对屏幕坐标
     CGPoint relativeWindowPoint = [firstResponderView convertPoint:CGPointMake(0, 0) toView:[[UIApplication sharedApplication] keyWindow]];
     if ([firstResponderView isKindOfClass:[UITextView class]]) {
